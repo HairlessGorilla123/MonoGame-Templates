@@ -22,4 +22,5 @@ After a bit of digging, I have found a method to make these templates functional
 - You can now try creating a new project using this template and if all of the steps are followed correctly, should be working fine.
 
 
-I've narrowed down the reason of this issue to be the template creation process that Visual Studio takes does not include the .config folder in templates. The manual fix for this is to add this folder into your template and ensure this folder gets copied into projects using the template by adding the code from step 6. This now allows Visual Studio to use the build tools provided by dotnet, which includes the content manager tool, now allowing it to be used.
+I've narrowed down the reason of this issue to be the template creation process that Visual Studio takes does not include the .config folder in templates.
+The manual fix for this is to add this folder into your template and ensure this folder gets copied into projects using the template by adding the code from step 6. This now allows Visual Studio to use the build tools provided by dotnet, which includes the content manager tool, now allowing it to be used.
