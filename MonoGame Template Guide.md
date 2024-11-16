@@ -10,10 +10,10 @@ After a bit of digging, I have found a method to make these templates functional
 - Also locate the original source project files in file explorer (default path is C:\Users\USERNAME\source\repos).
 - Open your source project and locate the .config directory (this should be in the base repository of your project), copy this folder and paste it into the extracted template folder.
 - Next you want to open the .vstemplate file (typically called 'MyTemplate.vstemplate') and create a new line directly below the <TemplateContent> line.
-- In this newly created empty space, paste the following lines:
-<Folder Name=".config" TargetFolderName=".config">
- <ProjectItem ReplaceParameters="false" TargetFileName="dotnet-tools.json">dotnet-tools.json</ProjectItem>
-</Folder>
+- In this newly created empty space, paste the following text:
+  <Folder Name=".config" TargetFolderName=".config">
+   <ProjectItem ReplaceParameters="false" TargetFileName="dotnet-tools.json">dotnet-tools.json</ProjectItem>
+  </Folder>
 - Save the file and now select everything (still in the extracted template) and using 7zip (or your desired archiver), compress all of the contents of the template into a new .zip archive, use the exact same name of the   
   original template.
 - This is now your new project template, put a copy of it in the 'My Exported Templates' directory.
